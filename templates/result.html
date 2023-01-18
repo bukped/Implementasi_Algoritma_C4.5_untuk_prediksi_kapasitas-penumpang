@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body bgcolor=#a3cfb4>
+      <h1>Iris Prediction Decision Tree Results</h1>
+      <center>
+      
+        <h1>Prediction</h1>
+
+      {%if prediction_text == 0%}
+      <h1>Tidak penuh</h1>
+      <img src='static\Iris_versicolor.jpg'>
+
+      {%elif prediction_text == 1%}
+      <h1>penuh</h1>
+      <img src='static\Iris_setosa.jpg'>
+
+      {%else%}
+      <h1>Iris-virginica</h1>
+      <img src='static\Iris_virginica.jpg'>
+
+      {%endif%}
+
+      <br>
+      <br>
+  </body>
+</html>

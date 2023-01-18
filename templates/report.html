@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>{% block title %} Tambah Data{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static' , filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static' , filename='assets/css/fontawesome.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-seo-dream.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animated.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}" />
+  
+    <link rel="stylesheet" type="text/css" href="static/css/util.css">
+    <style type="text/css">
+
+    </style>
+</head>
+</head>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/" class="logo">
+                            <h4>Aplikasi Prediksi</h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+                            {% if session['name']%}
+                            <!-- <li class="scroll-to-section"><a href="/portofolio">Portofolio</a></li> -->
+                            <!-- <li class="scroll-to-section"><a href="/about">Prediksi</a></li>
+                            <li class="scroll-to-section"><a href="/contact">Contact</a></li> -->
+                            <li class="scroll-to-section"><a href="/logout">Logout</a></li>
+                            <li class="scroll-to-section"><img src="{{ url_for('static', filename='assets/images/logo-icon.png') }}" alt="" /></li>
+                            {%else %}
+                            <li class="scroll-to-section"><a href="/login">Login</a></li>
+                            <li class="scroll-to-section"><a href="/register">Register</a></li>
+                            <li class="scroll-to-section">
+                                <img src="{{ url_for('static', filename='assets/images/logo-icon.png') }}" alt="" />
+                            </li>
+                            {%endif%}
+                        </ul>
+                        <!-- <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a> -->
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    {%block content %}
+
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2021 SEO Dream Co., Ltd. All Rights Reserved.
+
+                        <br />Web Designed by <a rel="nofollow" href="https://templatemo.com" title="free CSS templates">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/owl-carousel.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/animation.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/imagesloaded.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+</body>
+
+<div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <form id="contact" action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="section-heading">                             
+                                <!-- <h6>Contact Us</h6> -->
+                                <h2>Tambah Data Prediksi Kapasitas Penumpang</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Namamaskapai" id="name" placeholder="Nama maskapai" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Namamaskapai">
+										<option value="">Nama Maskapai</option>
+                                          <option value="0">wing</option>
+                                          <option value="1">lion</option> 
+                                          <option value="2">citilink</option>
+                                          <option value="3">air</option> 
+										 
+											<!-- <input type="text" class="form-control"  name="Namamaskapai" > -->
+											
+										</select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Asal_Bandara" id="surname" placeholder="Asal Bandara" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Asal_Bandara">
+                                        <option value="">Asal Bandara</option>
+                                          <option value="0">Bandara ABC</option>
+                                    
+                                            
+                                        </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Tujuan_Bandara" id="email"  placeholder="Tujuan Bandara" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Tujuan_Bandara">
+                                        <option value="">Tujuan Bandara</option>
+                                          <option value="0">JOG</option>
+                                          <option value="1">DPS</option> 
+                                          <option value="2">KNO</option>
+                                          <option value="3">BPN</option> 
+                                          <option value="4">SUB</option>
+                                          <option value="5">PLM</option>
+                                          <option value="6">UPG</option>
+                                          <option value="7">PDG</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Hari" id="subject" placeholder="Hari" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Hari">
+                                        <option value="">Hari</option>
+                                          <option value="0">Senin</option>
+                                          <option value="1">selasa</option> 
+                                          <option value="2">Rabu</option>
+                                          <option value="3">Kamis</option> 
+                                          <option value="4">Jumat</option>
+                                          <option value="5">Sabtu</option>
+                                          <option value="6">Minggu</option>
+                                        
+                                    </select>
+                                </div>
+                                <!-- <div class="col-lg-6"> -->
+                                    <!-- <fieldset>
+                                        <input type="text" name="Hari" id="subject" placeholder="Hari" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <!-- <input type="date" id="tanggal" name="tanggal" placeholder="tangal">
+                                </div> -->
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <!-- <fieldset>
+                                                <input type="text" name="Bulan" id="name" placeholder="Bulan" autocomplete="on" required />
+                                            </fieldset> -->
+                                            <select type="text" class="form-control"  name="Bulan">
+                                                <option value="">Bulan</option>
+                                                  <option value="1">Januari</option> 
+                                                  <option value="2">Febuarai</option>
+                                                  <option value="3">Maret</option> 
+                                                  <option value="4">April</option>
+                                                  <option value="5">Mei</option>
+                                                  <option value="6">Juni</option>
+                                                  <option value="7">Juli</option>
+                                                  <option value="8">Agustus</option>
+                                                  <option value="9">September</option>
+                                                  <option value="10">Oktober</option>
+                                                  <option value="11">November</option>
+                                                  <option value="12">Desember</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- <fieldset>
+                                                <input type="text" name="Waktu_Keberangkatan" id="surname" placeholder="Waktu Keberangkatan" autocomplete="on" required />
+                                            </fieldset> -->
+                                            <select type="text" class="form-control"  name="Waktu_Keberangkatan">
+                                                <option value="">Waktu Keberangkatan</option>
+                                                  <option value="0">Pagi</option>
+                                                  <option value="1">Siang</option> 
+                                                  <option value="2">Sore</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- <fieldset>
+                                                <input type="text" name="Kapasitas_maksimal_pesawat" id="email" placeholder="Kapasitas Maksimal Pesawat" autocomplete="on" required />
+                                            </fieldset> -->
+                                            <select type="text" class="form-control"  name="Kapasitas_maksimal_pesawat">
+                                                <option value="">Waktu Keberangkatan</option>
+                                                  <option value="72">Wing Air (72)</option>
+                                                  <option value="189">Lion Air (189)</option> 
+                                                  <option value="180">Citilink (180)</option>
+                                                  <option value="180">Air Asia (180)</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <input type="text" style="background-color: white;margin-bottom: 0px;"name="Jumlah_Penumpang" id="subject" placeholder="Jumlah Penumpang" autocomplete="on" required />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Hari" id="subject" placeholder="Hari" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <input type="date" id="tanggal" style="background-color: white;" name="tanggal" placeholder="tangal">
+                                </div>
+
+                                    <!-- <fieldset>
+                                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                    </fieldset> -->
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Masukkan Data</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock %}
