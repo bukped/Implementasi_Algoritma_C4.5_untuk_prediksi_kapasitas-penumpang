@@ -1,0 +1,170 @@
+{% extends 'layout.html'%}{%block title %} Tambah {% endblock %}{%block content%}
+<div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <form id="contact" action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="section-heading">
+                                <!-- <h6>Contact Us</h6> -->
+                                <h2>Aplikasi Prediksi Kepenuhan penumpang</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Namamaskapai" id="name" placeholder="Nama maskapai" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Namamaskapai">
+										<option value="">Nama Maskapai</option>
+                                          <option value="0">wing</option>
+                                          <option value="1">lion</option> 
+                                          <option value="2">citilink</option>
+                                          <option value="3">air</option> 
+										 
+											<!-- <input type="text" class="form-control"  name="Namamaskapai" > -->
+											
+										</select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Asal_Bandara" id="surname" placeholder="Asal Bandara" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Asal_Bandara">
+                                        <option value="">Asal Bandara</option>
+                                          <option value="0">Bandara ABC</option>
+                                    
+                                            
+                                        </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Tujuan_Bandara" id="email"  placeholder="Tujuan Bandara" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Tujuan_Bandara">
+                                        <option value="">Tujuan Bandara</option>
+                                          <option value="0">JOG</option>
+                                          <option value="1">DPS</option> 
+                                          <option value="2">KNO</option>
+                                          <option value="3">BPN</option> 
+                                          <option value="4">SUB</option>
+                                          <option value="5">PLM</option>
+                                          <option value="6">UPG</option>
+                                          <option value="7">PDG</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <fieldset>
+                                        <input type="text" name="Hari" id="subject" placeholder="Hari" autocomplete="on" required />
+                                    </fieldset> -->
+                                    <select type="text" class="form-control"  name="Hari">
+                                        <option value="">Hari</option>
+                                          <option value="0">Senin</option>
+                                          <option value="1">selasa</option> 
+                                          <option value="2">Rabu</option>
+                                          <option value="3">Kamis</option> 
+                                          <option value="4">Jumat</option>
+                                          <option value="5">Sabtu</option>
+                                          <option value="6">Minggu</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <!-- <fieldset>
+                                                <input type="text" name="Bulan" id="name" placeholder="Bulan" autocomplete="on" required />
+                                            </fieldset> -->
+                                            <select type="text" class="form-control"  name="Bulan">
+                                                <option value="">Bulan</option>
+                                                  <option value="1">Januari</option> 
+                                                  <option value="2">Febuarai</option>
+                                                  <option value="3">Maret</option> 
+                                                  <option value="4">April</option>
+                                                  <option value="5">Mei</option>
+                                                  <option value="6">Juni</option>
+                                                  <option value="7">Juli</option>
+                                                  <option value="8">Agustus</option>
+                                                  <option value="9">September</option>
+                                                  <option value="10">Oktober</option>
+                                                  <option value="11">November</option>
+                                                  <option value="12">Desember</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- <fieldset>
+                                                <input type="text" name="Waktu_Keberangkatan" id="surname" placeholder="Waktu Keberangkatan" autocomplete="on" required />
+                                            </fieldset> -->
+                                            <select type="text" class="form-control"  name="Waktu_Keberangkatan">
+                                                <option value="">Waktu Keberangkatan</option>
+                                                  <option value="0">Pagi</option>
+                                                  <option value="1">Siang</option> 
+                                                  <option value="2">Sore</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- <fieldset>
+                                                <input type="text" name="Kapasitas_maksimal_pesawat" id="email" placeholder="Kapasitas Maksimal Pesawat" autocomplete="on" required />
+                                            </fieldset> -->
+                                            <select type="text" class="form-control"  name="Kapasitas_maksimal_pesawat">
+                                                <option value="">Waktu Keberangkatan</option>
+                                                  <option value="72">Wing Air (72)</option>
+                                                  <option value="189">Lion Air (189)</option> 
+                                                  <option value="180">Citilink (180)</option>
+                                                  <option value="180">Air Asia (180)</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <fieldset>
+                                                <input type="text" style="background-color: white;"name="Jumlah_Penumpang" id="subject" placeholder="Jumlah Penumpang" autocomplete="on" required />
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-lg-12">
+                                    <!-- <fieldset>
+                                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                    </fieldset> -->
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Masukkan Data</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-3">
+                            <div class="contact-info">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="{{ url_for('static', filename='assets/images/contact-icon-01.png') }}" alt="email icon" />
+                                        </div>
+                                        <a href="#">info@company.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="{{ url_for('static', filename='assets/images/contact-icon-02.png') }}" alt="phone" />
+                                        </div>
+                                        <a href="#">+001-002-0034</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img src="{{ url_for('static', filename='assets/images/contact-icon-03.png') }}" alt="location" />
+                                        </div>
+                                        <a href="#">26th Street, Digital Villa</a> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock %}

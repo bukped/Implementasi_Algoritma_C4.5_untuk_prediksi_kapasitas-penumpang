@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="static/css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="static/css/style1.css"/>
+	meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static' , filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static' , filename='assets/css/fontawesome.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-seo-dream.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animated.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}" />
+  
+    <link rel="stylesheet" type="text/css" href="static/css/util.css">
+    <style type="text/css">
+    	.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4fab40;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+</head>
+</head>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/" class="logo">
+                            <h4>Aplikasi Prediksi</h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+                            {% if session['name']%}
+                            <!-- <li class="scroll-to-section"><a href="/portofolio">Portofolio</a></li> -->
+                            <!-- <li class="scroll-to-section"><a href="/about">Prediksi</a></li>
+                            <li class="scroll-to-section"><a href="/contact">Contact</a></li> -->
+                            <li class="scroll-to-section"><a href="/logout">Logout</a></li>
+                            <li class="scroll-to-section"><img src="{{ url_for('static', filename='assets/images/logo-icon.png') }}" alt="" /></li>
+                            {%else %}
+                            <li class="scroll-to-section"><a href="/login">Login</a></li>
+                            <li class="scroll-to-section"><a href="/register">Register</a></li>
+                            <li class="scroll-to-section">
+                                <img src="{{ url_for('static', filename='assets/images/logo-icon.png') }}" alt="" />
+                            </li>
+                            {%endif%}
+                        </ul>
+                        <!-- <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a> -->
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    {%block content %}{% endblock %}
+
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2021 SEO Dream Co., Ltd. All Rights Reserved.
+
+                        <br />Web Designed by <a rel="nofollow" href="https://templatemo.com" title="free CSS templates">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/owl-carousel.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/animation.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/imagesloaded.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+</body>
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" action="" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>01</span></p>
+			            	<span class="step-text">Nama Maskapai</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Nama maskapai</h3>
+									<p>Masukkan Nama Maskapai Sesuai dengan yang diinginkan </p>
+									
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<select type="text" class="form-control"  name="Namamaskapai">
+										<option value="">Nama Maskapai</option>
+                                          <option value="0">wing</option>
+                                          <option value="1">lion</option> 
+                                          <option value="2">citilink</option>
+                                          <option value="3">air</option> 
+										 
+											<!-- <input type="text" class="form-control"  name="Namamaskapai" > -->
+											
+										</select>
+									</div>
+									
+								</div>
+								
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			             <h2>
+			            	<p class="step-icon"><span>02</span></p>
+			            	<span class="step-text">Asal Bandara</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Asal Bandara</h3>
+									<p> Masukkan Asal Bandara</p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<!-- <fieldset>
+					
+											<input type="text" class="form"  name="Asal_Bandara" placeholder=""  min="24" max="60" required>
+										</fieldset> -->
+										<select type="text" class="form-control"  name="Asal_Bandara">
+											<option value="">Asal Bandara</option>
+											  <option value="0">Bandara ABC</option>
+										
+												
+											</select>
+									</div>
+									
+								</div>
+								
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>03</span></p>
+			            	<span class="step-text">Tujuan Bandara</span>
+			            </h2>
+			            <section>
+			               <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Tujuan Bandara</h3>
+									<p> Masukkan Bandara Daerah Tujuan </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<!-- <fieldset>
+					
+											<input type="text" class="form-control"  name="Tujuan_Bandara" placeholder=""  min="24" max="60" required>
+										</fieldset> -->
+										<select type="text" class="form-control"  name="Tujuan_Bandara">
+											<option value="">Tujuan Bandara</option>
+											  <option value="0">JOG</option>
+											  <option value="1">DPS</option> 
+											  <option value="2">KNO</option>
+											  <option value="3">BPN</option> 
+											  <option value="4">SUB</option>
+											  <option value="5">PLM</option>
+											  <option value="6">UPG</option>
+											  <option value="7">PDG</option>
+											
+										</select>
+										
+									</div>
+									
+								</div>
+								
+							</div>
+			            </section>
+
+
+			            <!-- SECTION 4 -->
+			            <h2>
+			            	<p class="step-icon"><span>04</span></p>
+			            	<span class="step-text">Hari</span>
+			            </h2>
+			            <section>
+			               <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Hari</h3>
+									<p> Masukkan Hari yang telah ditentukan </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<!-- <fieldset>
+					
+											<input type="text" class="form-control"  name="Hari" placeholder=""  min="32" max="80" required>
+										</fieldset> -->
+										<select type="text" class="form-control"  name="Hari">
+											<option value="">Hari</option>
+											  <option value="0">Senin</option>
+											  <option value="1">selasa</option> 
+											  <option value="2">Rabu</option>
+											  <option value="3">Kamis</option> 
+											  <option value="4">Jumat</option>
+											  <option value="5">Sabtu</option>
+											  <option value="6">Minggu</option>
+											
+										</select>
+									</div>
+									
+								</div>
+								
+							</div>
+			            </section>
+
+                        <!-- SECTION 5 -->
+			            <h2>
+			            	<p class="step-icon"><span>05</span></p>
+			            	<span class="step-text">Bulan</span>
+			            </h2>
+			            <section>
+			               <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Bulan</h3>
+									<p> Masukkan Bulan yang telah ditentukan</p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<!-- <fieldset>
+					
+											<input type="text" class="form-control"  name="Bulan" placeholder=""  min="32" max="80" required>
+										</fieldset> -->
+										<select type="text" class="form-control"  name="Bulan">
+											<option value="">Bulan</option>
+											  <option value="1">Januari</option> 
+											  <option value="2">Febuarai</option>
+											  <option value="3">Maret</option> 
+											  <option value="4">April</option>
+											  <option value="5">Mei</option>
+											  <option value="6">Juni</option>
+											  <option value="7">Juli</option>
+											  <option value="8">Agustus</option>
+											  <option value="9">September</option>
+											  <option value="10">Oktober</option>
+											  <option value="11">November</option>
+											  <option value="12">Desember</option>
+											
+										</select>
+									</div>
+									
+								</div>
+							</div>
+			            </section>
+
+
+                        <!-- SECTION 6 -->
+			            <h2>
+			            	<p class="step-icon"><span>06</span></p>
+			            	<span class="step-text">Waktu</span>
+			            </h2>
+			            <section>
+			               <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Waktu</h3>
+									<p> Masukkan Waktu Keberangkatan sesuai dengan yang dibutuhkan</p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<!-- <fieldset>
+					
+											<input type="text" class="form-control"  name="Waktu_Keberangkatan" placeholder=""  min="32" max="80" required>
+										</fieldset> -->
+										<select type="text" class="form-control"  name="Waktu_Keberangkatan">
+											<option value="">Waktu Keberangkatan</option>
+											  <option value="0">Pagi</option>
+											  <option value="1">Siang</option> 
+											  <option value="2">Sore</option>
+											
+										</select>
+									</div>
+									
+								</div>
+							
+							
+							</div>
+			            </section>
+
+						<!-- SECTION 7 -->
+			            <h2>
+			            	<p class="step-icon"><span>07</span></p>
+			            	<span class="step-text">Kapasitas Pesawat</span>
+			            </h2>
+			            <section>
+			               <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Kapasitas Pesawat</h3>
+									<p> Masukkan kapasitas pesawat sesuai dengan yang telah ditentukan</p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<!-- <fieldset>
+					
+											<input type="text" class="form-control"  name="Kapasitas_maksimal_pesawat" placeholder=""  min="32" max="80" required>
+										</fieldset> -->
+										<select type="text" class="form-control"  name="Kapasitas_maksimal_pesawat">
+											<option value="">Waktu Keberangkatan</option>
+											  <option value="72">Wing Air (72)</option>
+											  <option value="189">Lion Air (189)</option> 
+											  <option value="180">Citilink (180)</option>
+											  <option value="180">Air Asia (180)</option>
+											
+										</select>
+									
+										
+									</div>
+									
+								</div>
+							
+							</div>
+			            </section>
+
+                        <!-- SECTION 8 -->
+			            <h2>
+			            	<p class="step-icon"><span>08</span></p>
+			            	<span class="step-text">Jumlah Penumpang</span>
+			            </h2>
+			            <section>
+			               <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Jumlah Penumpang</h3>
+									<p> Masukkan Jumlah penumpang yang ada</p>
+								</div>
+								
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+					
+											<input type="text" class="form-control"  name="Jumlah_Penumpang" placeholder=""  min="24" max="60" required>
+										</fieldset>
+									</div>
+									
+								</div>
+							
+						<button class="button" style="vertical-align:middle" formaction="{{ url_for('predict')}}"><span>Predict Kepenuhan</span></button>
+							</div>
+			            </section>
+
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="static/js/jquery-3.3.1.min.js"></script>
+	<script src="static/js/jquery.steps.js"></script>
+	<script src="static/js/main1.js"></script>
+
+
+</body>
+</html>

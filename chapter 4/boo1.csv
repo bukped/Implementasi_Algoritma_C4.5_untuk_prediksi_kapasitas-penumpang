@@ -1,0 +1,101 @@
+no,Namamaskapai,Asal_Bandara,Tujuan_Bandara,Hari,Bulan,Waktu_Keberangkatan,Kapasitas_maksimal_pesawat,Jumlah_penumpang,Penuh
+1,Wing Air,Husein Sastra Negra ,SUB,Selasa,11,Pagi,72,22,No
+2,Wing Air,Husein Sastra Negra ,JOG,Selasa,11,Pagi,72,49,Yes
+3,Wing Air,Husein Sastra Negra ,PLM,Selasa,11,Sore,72,26,No
+4,Lion Air,Husein Sastra Negra ,UPG,Selasa,11,Pagi,189,171,Yes
+5,Lion Air,Husein Sastra Negra ,DPS,Selasa,11,Pagi,189,191,Yes
+6,Lion Air,Husein Sastra Negra ,DPS,Selasa,11,Sore,189,192,Yes
+7,Lion Air,Husein Sastra Negra ,KNO,Selasa,11,Sore,189,148,No
+8,Citilink,Husein Sastra Negra ,DPS,Selasa,11,Pagi,180,181,Yes
+9,Citilink,Husein Sastra Negra ,BPN,Selasa,11,Siang,180,172,Yes
+10,Citilink,Husein Sastra Negra ,KNO,Selasa,11,Sore,180,167,Yes
+11,Air Asia,Husein Sastra Negra ,DPS,Selasa,11,Siang,180,171,Yes
+12,Air Asia,Husein Sastra Negra ,DPS,Selasa,11,Sore,180,180,Yes
+13,Wing Air,Husein Sastra Negra ,JOG,Rabu,11,Pagi,72,45,Yes
+14,Wing Air,Husein Sastra Negra ,PDG,Rabu,11,Sore,72,0,No
+15,Lion Air,Husein Sastra Negra ,DPS,Rabu,11,Pagi,189,127,No
+16,Lion Air,Husein Sastra Negra ,KNO,Rabu,11,Sore,189,166,Yes
+17,Citilink,Husein Sastra Negra ,DPS,Rabu,11,Pagi,180,166,Yes
+18,Citilink,Husein Sastra Negra ,BPN,Rabu,11,Siang,180,112,No
+19,Citilink,Husein Sastra Negra ,KNO,Rabu,11,Siang,180,123,No
+20,Air Asia,Husein Sastra Negra ,DPS,Rabu,11,Siang,180,120,No
+21,Wing Air,Husein Sastra Negra ,JOG,Kamis,11,Pagi,72,40,Yes
+22,Lion Air,Husein Sastra Negra ,DPS,Kamis,11,Pagi,189,124,No
+23,Lion Air,Husein Sastra Negra ,KNO,Kamis,11,Sore,189,127,No
+24,Citilink,Husein Sastra Negra ,DPS,Kamis,11,Pagi,180,132,No
+25,Citilink,Husein Sastra Negra ,BPN,Kamis,11,Siang,180,16,No
+26,Citilink,Husein Sastra Negra ,KNO,Kamis,11,Siang,180,129,No
+27,Air Asia,Husein Sastra Negra ,DPS,Kamis,11,Pagi,180,91,No
+28,Wing Air,Husein Sastra Negra ,JOG,Jumat,11,Pagi,72,39,No
+29,Lion Air,Husein Sastra Negra ,DPS,Jumat,11,Pagi,189,146,No
+30,Lion Air,Husein Sastra Negra ,KNO,Jumat,11,Sore,189,86,No
+31,Citilink,Husein Sastra Negra ,DPS,Jumat,11,Pagi,180,123,No
+32,Citilink,Husein Sastra Negra ,BPN,Jumat,11,Siang,180,125,No
+33,Citilink,Husein Sastra Negra ,KNO,Jumat,11,Siang,180,89,No
+34,Air Asia,Husein Sastra Negra ,DPS,Jumat,11,Pagi,180,89,No
+35,Wing Air,Husein Sastra Negra ,JOG,Sabtu,11,Pagi,72,42,Yes
+36,Lion Air,Husein Sastra Negra ,DPS,Sabtu,11,Pagi,189,179,Yes
+37,Lion Air,Husein Sastra Negra ,KNO,Sabtu,11,Sore,189,127,No
+38,Citilink,Husein Sastra Negra ,DPS,Sabtu,11,Pagi,180,177,Yes
+39,Citilink,Husein Sastra Negra ,KNO,Sabtu,11,Siang,180,125,No
+40,Air Asia,Husein Sastra Negra ,DPS,Sabtu,11,Siang,180,160,Yes
+41,Wing Air,Husein Sastra Negra ,JOG,Minggu,11,Pagi,72,45,Yes
+42,Lion Air,Husein Sastra Negra ,DPS,Minggu,11,Pagi,189,161,Yes
+43,Lion Air,Husein Sastra Negra ,KNO,Minggu,11,Sore,189,133,No
+44,Citilink,Husein Sastra Negra ,DPS,Minggu,11,Pagi,180,116,No
+45,Citilink,Husein Sastra Negra ,BPN,Minggu,11,Siang,180,181,Yes
+46,Citilink,Husein Sastra Negra ,KNO,Minggu,11,Siang,180,110,No
+47,Air Asia,Husein Sastra Negra ,DPS,Minggu,11,Pagi,180,57,No
+48,Wing Air,Husein Sastra Negra ,JOG,Senin,11,Pagi,72,38,No
+49,Lion Air,Husein Sastra Negra ,DPS,Senin,11,Pagi,189,160,Yes
+50,Lion Air,Husein Sastra Negra ,KNO,Senin,11,Sore,189,165,Yes
+51,Citilink,Husein Sastra Negra ,DPS,Senin,11,Pagi,180,128,No
+52,Citilink,Husein Sastra Negra ,KNO,Senin,11,Siang,180,161,Yes
+53,Air Asia,Husein Sastra Negra ,DPS,Senin,11,Pagi,180,65,No
+54,Wing Air,Husein Sastra Negra ,JOG,Selasa,11,Pagi,72,70,Yes
+55,Lion Air,Husein Sastra Negra ,DPS,Selasa,11,Pagi,189,182,Yes
+56,Lion Air,Husein Sastra Negra ,KNO,Selasa,11,Sore,189,100,No
+57,Citilink,Husein Sastra Negra ,DPS,Selasa,11,Pagi,180,146,No
+58,Citilink,Husein Sastra Negra ,KNO,Selasa,11,Siang,180,106,No
+59,Air Asia,Husein Sastra Negra ,DPS,Selasa,11,Pagi,180,80,No
+60,Wing Air,Husein Sastra Negra ,JOG,Rabu,11,Pagi,72,32,No
+61,Lion Air,Husein Sastra Negra ,DPS,Rabu,11,Pagi,189,139,No
+62,Lion Air,Husein Sastra Negra ,KNO,Rabu,11,Sore,189,157,Yes
+63,Citilink,Husein Sastra Negra ,DPS,Rabu,11,Pagi,180,177,Yes
+64,Citilink,Husein Sastra Negra ,BPN,Rabu,11,Siang,180,138,No
+65,Citilink,Husein Sastra Negra ,KNO,Rabu,11,Siang,180,103,No
+66,Air Asia,Husein Sastra Negra ,DPS,Rabu,11,Pagi,180,114,No
+67,Wing Air,Husein Sastra Negra ,JOG,Kamis,11,Pagi,72,50,Yes
+68,Lion Air,Husein Sastra Negra ,DPS,Kamis,11,Pagi,189,180,Yes
+69,Lion Air,Husein Sastra Negra ,KNO,Kamis,11,Sore,189,160,Yes
+70,Citilink,Husein Sastra Negra ,DPS,Kamis,11,Pagi,180,173,Yes
+71,Citilink,Husein Sastra Negra ,BPN,Kamis,11,Sore,180,140,No
+72,Citilink,Husein Sastra Negra ,KNO,Kamis,11,Sore,180,147,No
+73,Air Asia,Husein Sastra Negra ,DPS,Kamis,11,Pagi,180,174,Yes
+74,Wing Air,Husein Sastra Negra ,JOG,Jumat,11,Pagi,72,64,Yes
+75,Lion Air,Husein Sastra Negra ,DPS,Jumat,11,Pagi,189,184,Yes
+76,Lion Air,Husein Sastra Negra ,KNO,Jumat,11,Sore,189,171,Yes
+77,Citilink,Husein Sastra Negra ,DPS,Jumat,11,Pagi,180,179,Yes
+78,Citilink,Husein Sastra Negra ,KNO,Jumat,11,Siang,180,103,No
+79,Air Asia,Husein Sastra Negra ,DPS,Jumat,11,Siang,180,173,Yes
+80,Wing Air,Husein Sastra Negra ,JOG,Sabtu,11,Pagi,72,72,Yes
+81,Lion Air,Husein Sastra Negra ,DPS,Sabtu,11,Pagi,189,183,Yes
+82,Lion Air,Husein Sastra Negra ,KNO,Sabtu,11,Sore,189,127,No
+83,Citilink,Husein Sastra Negra ,DPS,Sabtu,11,Pagi,180,141,No
+84,Citilink,Husein Sastra Negra ,BPN,Sabtu,11,Sore,180,158,Yes
+85,Citilink,Husein Sastra Negra ,KNO,Sabtu,11,Siang,180,126,No
+86,Air Asia,Husein Sastra Negra ,DPS,Sabtu,11,Pagi,180,148,No
+87,Wing Air,Husein Sastra Negra ,JOG,Minggu,11,Pagi,72,53,Yes
+88,Lion Air,Husein Sastra Negra ,DPS,Minggu,11,Pagi,189,189,Yes
+89,Lion Air,Husein Sastra Negra ,KNO,Minggu,11,Sore,189,151,Yes
+90,Citilink,Husein Sastra Negra ,DPS,Minggu,11,Pagi,180,168,Yes
+91,Citilink,Husein Sastra Negra ,KNO,Minggu,11,Siang,180,106,No
+92,Wing Air,Husein Sastra Negra ,JOG,Senin,11,Pagi,72,48,Yes
+93,Lion Air,Husein Sastra Negra ,DPS,Senin,11,Pagi,189,175,Yes
+94,Lion Air,Husein Sastra Negra ,KNO,Senin,11,Sore,189,105,No
+95,Citilink,Husein Sastra Negra ,KNO,Senin,11,Siang,180,72,No
+96,Wing Air,Husein Sastra Negra ,JOG,Selasa,11,Pagi,72,41,Yes
+97,Lion Air,Husein Sastra Negra ,DPS,Selasa,11,Pagi,189,111,No
+98,Lion Air,Husein Sastra Negra ,KNO,Selasa,11,Siang,189,161,Yes
+99,Citilink,Husein Sastra Negra ,DPS,Selasa,11,Pagi,180,137,No
+100,Citilink,Husein Sastra Negra ,BPN,Selasa,11,Siang,180,125,No
